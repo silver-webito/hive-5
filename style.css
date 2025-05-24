@@ -31,6 +31,23 @@ A1{
   text-align: center;
   font-family: sans-serif;
 }
+.fti {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ftc h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.ftc ul {
+  list-style: none;
+  padding: 0;
+}
+  
 h1{
   background-color: rgb(223, 180, 245);
     font: bolder;
