@@ -14,6 +14,16 @@ section{
     justify-content: center;
     align-items: center;
 }
+.sc{
+    background: linear-gradient(to right, pink, violet);
+    color: blueviolet;
+    padding: 2%;
+    margin: 3%;
+}
+A1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 /* Fonts - playful & rounded */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@300;600&display=swap');
 
