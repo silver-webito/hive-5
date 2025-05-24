@@ -1,55 +1,12 @@
-.ap {
-  background-color: #D9481F;
-  color: blueviolet;
-  padding: 30px;
-  text-align: center;
-  font-family: sans-serif;
-}
-
-.ad {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.hg h3 {
-  margin-bottom: 10px;
-  font-size: 1.2em;
-}
-
-.hg ul {
-  list-style: none;
-  padding: 0;
-}
-
-.hg li {
-  margin-bottom: 5px;
-}
-
-.hg a {
-  color: white;
-  text-decoration: none;
-}
-
-.pro li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.copyright {
-  margin-top: 20px;
-}
-
-.copyright p {
-  font-size: 0.9em;
-}
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* Fonts */
 
 section{
     display: flex;
@@ -60,106 +17,100 @@ section{
 /* Fonts - playful & rounded */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@300;600&display=swap');
 
+main
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
-  color: #4a2c20; /* dark warm brown */
-  min-height: 100vh;
+  background-color: #fffaf5; /* soft rice background */
+  color: #3d1f00; /* rich brown text */
+  line-height: 1.6;
 }
 
-/* Nav */
+/* Navigation Bar */
 nav {
-  background-color: #d8470d; /* bright jollof red-orange */
+  background-color: #ff914d; /* warm jollof orange */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 5px 10px rgba(216, 71, 13, 0.5);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
-  font-family: 'Baloo 2', cursive;
-  font-size: 2.4rem;
-  color: #fff8f0;
-  text-shadow: 1px 1px 3px #aa3b00;
-  letter-spacing: 0.08em;
-  cursor: default;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.8rem;
+  gap: 1.2rem;
 }
 
 .nav-links a {
-  color: #fff8f0;
-  font-weight: 600;
+  color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
-  position: relative;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #feb47b;
-  left: 0;
-  bottom: -4px;
-  transition: width 0.3s ease;
-}
-
 .nav-links a:hover {
-  color: #feb47b;
+  color: #ffe8d6;
 }
 
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-/* Header / Hero */
+/* Hero Section */
 header {
-  background: url('https://images.unsplash.com/photo-1604908177522-4a4f9c947059?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-  height: 65vh;
+  background: url('https://images.unsplash.com/photo-1604908177522-1922087a2c6c') no-repeat center center/cover;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 1rem;
-  position: relative;
-  box-shadow: inset 0 0 0 1000px rgba(216, 71, 13, 0.6);
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  padding: 2rem;
+  color: white;
 }
 
 .hero-content {
-  color: #fff8f0;
-  font-family: 'Baloo 2', cursive;
-  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
-  background: rgba(255 255 255 / 0.15);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(255 126 95, 0.5);
+  border-radius: 10px;
 }
 
 .hero-content h1 {
-  font-size: 3.8rem;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.1em;
-  text-shadow: 2px 2px 6px #aa3b00;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 1.6rem;
-  font-weight: 300;
-  text-shadow: 1px 1px 3px #aa3b00;
+.hero-content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #ff914d;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-.btn {
-  background: #ff914d;
-  color
+.hero-content .btn:hover {
+  background-color: #e86c0b;
+}
 
+/* Menu Section */
+.menu-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.item {
+  background-color: #fff0e0;
+}
