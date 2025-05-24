@@ -1,0 +1,46 @@
+.ap {
+  background-color: #D9481F;
+  color: blueviolet;
+  padding: 30px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.ad {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hg h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.hg ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hg li {
+  margin-bottom: 5px;
+}
+
+.hg a {
+  color: white;
+  text-decoration: none;
+}
+
+.pro li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.copyright p {
+  font-size: 0.9em;
+}
