@@ -1,10 +1,9 @@
-/* General Reset */
-* {
+body {
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color: #fffaf5;
+  color: #442c2e;
 }
-
 
 /* Fonts */
 
@@ -26,91 +25,147 @@ body {
 }
 
 /* Navigation Bar */
+
 nav {
-  background-color: #ff914d; /* warm jollof orange */
+  background-color: #ff5722;
+  color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
+  font-family: 'Pacifico', cursive;
   font-size: 1.8rem;
-  font-weight: 700;
-  color: #fff;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .nav-links a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #ffe8d6;
-}
-
-/* Hero Section */
 header {
-  background: url('https://images.unsplash.com/photo-1604908177522-1922087a2c6c') no-repeat center center/cover;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(to right, #ff7043, #ffe0b2);
   text-align: center;
-  padding: 2rem;
+  padding: 5rem 2rem;
   color: white;
-}
-
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 10px;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 .hero-content .btn {
-  display: inline-block;
   margin-top: 1rem;
-  background-color: #ff914d;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
+  background: white;
+  color: #ff5722;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .hero-content .btn:hover {
-  background-color: #e86c0b;
+  background-color: #ffe0b2;
 }
 
-/* Menu Section */
-.menu-section {
+section {
   padding: 3rem 2rem;
-  text-align: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.item {
+  background: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.item h3 {
+  margin-top: 0;
+  color: #e64a19;
+}
+
+.price {
+  font-weight: bold;
+  color: #bf360c;
+}
+
+.about-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
 }
 
 .item {
   background-color: #fff0e0;
+}
+
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Quicksand';
+}
+
+form button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ffe0b2;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #e64a19;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.menu-section {
+  width: 300px;       /* Set your desired width */
+  max-width: 100%;    /* Ensure image never overflows container */
+  height: auto;       /* Keep aspect ratio */
+  border-radius: 15px; /* Rounded corners */
+  margin-top: 1rem;   /* Some space above */
+  display: block;     /* So margin works nicely */
+  margin-left: auto;  /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
 }
